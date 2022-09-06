@@ -4,5 +4,4 @@
 global:
   postgresql:
     auth:
-      password: "bendakayalu"
-      postgresPassword: "dondakayalu"
+      postgresPassword: <path:kv/data/secretpath#mysecretkey>
