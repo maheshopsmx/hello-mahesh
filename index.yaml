@@ -3,6 +3,16 @@ entries:
   example:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-09-06T13:49:02.047148779Z"
+    description: A Helm chart for Kubernetes
+    digest: 4a67b87832cbba767aa875acfa49550cb28b39da7ce007dcb43e83f845fd5ed7
+    name: example
+    type: application
+    urls:
+    - https://github.com/gopaljayanthi/hello-gopal/releases/download/example-0.1.1/example-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-09-06T12:56:57.305067185Z"
     description: A Helm chart for Kubernetes
     digest: 835192ff3b7aa2295cab7af4edee06e2890370e0e73ad4b8c9db90d7d6faa92a
@@ -11,4 +21,35 @@ entries:
     urls:
     - https://github.com/gopaljayanthi/hello-gopal/releases/download/example-0.1.0/example-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-06T12:56:57.305071785Z"
+  postgresql:
+  - apiVersion: v2
+    appVersion: 14.5.0
+    created: "2022-09-06T13:49:02.432467899Z"
+    dependencies:
+    - name: common
+      repository: ""
+      version: 2.0.2
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: 13ccd608932e2ffa20e7c7f5a09518643cc8d40effd4ab9f8bd771d76e58fd50
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
+    - https://www.postgresql.org/
+    urls:
+    - https://github.com/gopaljayanthi/hello-gopal/releases/download/postgresql-11.8.1/postgresql-11.8.1.tgz
+    version: 11.8.1
+generated: "2022-09-06T13:49:02.432492801Z"
