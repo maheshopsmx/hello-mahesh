@@ -1,5 +1,5 @@
 apiVersion: v2
-appVersion: 14.5.3
+appVersion: 14.5.4
 dependencies:
   - name: common
     version: 2.0.2
@@ -21,4 +21,4 @@ name: postgresql
 sources:
   - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
   - https://www.postgresql.org/
-version: 11.8.5
+version: 11.8.9
