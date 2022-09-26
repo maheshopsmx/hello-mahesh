@@ -43,6 +43,36 @@ entries:
     version: 0.1.0
   postgresql:
   - apiVersion: v2
+    appVersion: 14.5.4
+    created: "2022-09-26T05:26:04.483458102Z"
+    dependencies:
+    - name: common
+      repository: ""
+      version: 2.0.2
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: 77a7b76752bbd0f5e64e939abe3c6fdfda3bbff67184ff4c890d32eaeff0e7a0
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
+    - https://www.postgresql.org/
+    urls:
+    - https://github.com/maheshopsmx/hello-mahesh/releases/download/postgresql-11.8.9/postgresql-11.8.9.tgz
+    version: 11.8.9
+  - apiVersion: v2
     appVersion: 14.5.0
     created: "2022-09-06T19:27:33.561107815Z"
     dependencies:
@@ -162,4 +192,4 @@ entries:
     urls:
     - https://github.com/gopaljayanthi/hello-gopal/releases/download/postgresql-11.8.1/postgresql-11.8.1.tgz
     version: 11.8.1
-generated: "2022-09-06T19:27:33.561161214Z"
+generated: "2022-09-26T05:26:04.483515902Z"
