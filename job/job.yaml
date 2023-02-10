@@ -6,7 +6,7 @@ spec:
  template:
     spec:
       containers:
-      - command: ["exit 1"]
+      - command: ["sleep", "30"]
         image: quay.io/opsmxpublic/awsgit:v2-openssh-javalibs
         imagePullPolicy: IfNotPresent
         name: auto-configure-mahesh
