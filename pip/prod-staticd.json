@@ -1,5 +1,6 @@
 {
   "appConfig": {},
+  "application": "sampleapp",
   "description": "This sample pipeline shows the opa static policy use case.Where the pipeline starts with prod, It should must have Manual Judgement and Deploy stages.",
   "keepWaitingPipelines": false,
   "lastModifiedBy": "admin",
