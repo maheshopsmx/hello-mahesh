@@ -1,5 +1,7 @@
 {
   "appConfig": {},
+  "application": "opsmx-gitops",
+  "name": "syncToGit",
   "description": "sync to git:- Backup the applications and pipelines from spinnaker to the repo i.e configured. if the input is empty it backup all the applications and pipelines. Branch and save path can also be specified as an input option to override the existing configuration",
   "keepWaitingPipelines": false,
   "lastModifiedBy": "admin",
