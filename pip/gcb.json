@@ -1,0 +1,36 @@
+{
+  "appConfig": {},
+  "application": "sampleapp",
+  "name": "gcb",
+  "keepWaitingPipelines": false,
+  "lastModifiedBy": "admin",
+  "limitConcurrent": true,
+  "spelEvaluator": "v4",
+  "stages": [
+    {
+      "account": "gcbwithouttoken",
+      "application": "gcrtest",
+      "buildDefinition": {
+        "options": {
+          "logging": "CLOUD_LOGGING_ONLY"
+        },
+        "steps": [
+          {
+            "args": [
+              "--version"
+            ],
+            "entrypoint": "mvn",
+            "name": "maven:3-jdk-8"
+          }
+        ]
+      },
+      "buildDefinitionSource": "text",
+      "name": "Google Cloud Build",
+      "refId": "1",
+      "requisiteStageRefIds": [],
+      "type": "googleCloudBuild"
+    }
+  ],
+  "triggers": [],
+  "updateTs": "1653394219000"
+}
