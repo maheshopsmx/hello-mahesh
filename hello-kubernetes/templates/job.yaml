@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: oes-autoconfigure-mahesh
+spec:
+ backoffLimit: 3
+ template:
+    spec:
+      containers:
+      - command: 
+        - /bin/sh
+        - +x
+        - -c
+        args:
+          - |-
+            echo mahesh
+            echo failling the pod  with exit 1
+            exit 5
+        image: quay.io/opsmxpublic/awsgit:v2-openssh-javalibs
+        imagePullPolicy: IfNotPresent
+        name: auto-configure-mahesh
+      restartPolicy: OnFailure
