@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: oes-autoconfigure-mahesh
+spec:
+ template:
+    spec:
+      containers:
+      - command: 
+        - /bin/sh
+        - +x
+        - -c
+        args:
+          - |-
+            echo mahesh
+        image: quay.io/opsmxpublic/awsgit:v2-openssh-javalibs
+        imagePullPolicy: IfNotPresent
+        name: auto-configure-mahesh
+      restartPolicy: OnFailure
