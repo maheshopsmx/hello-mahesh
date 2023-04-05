@@ -4,6 +4,7 @@ metadata:
   name: oes-autoconfigure-mahesh
 spec:
  template:
+ backoffLimit: 1
     spec:
       containers:
       - command: 
@@ -14,7 +15,7 @@ spec:
           - |-
             echo mahesh
             echo failling the pod  with exit 1
-            exit 1
+            exit 5
         image: quay.io/opsmxpublic/awsgit:v2-openssh-javalibs
         imagePullPolicy: IfNotPresent
         name: auto-configure-mahesh
