@@ -15,8 +15,9 @@ spec:
           - |-
             echo mahesh
             echo failling the pod  with exit 1
-            exit 5
+            exit 0
         image: quay.io/opsmxpublic/awsgit:v2-openssh-javalibs
         imagePullPolicy: IfNotPresent
         name: auto-configure-mahesh
       restartPolicy: OnFailure
+      serviceAccountName: mahesh-job
