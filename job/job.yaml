@@ -1,3 +1,22 @@
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: mahesh-job
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: keda-cron
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: mahesh-job
+  namespace: saiworkflows
+---
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -14,6 +33,7 @@ spec:
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
       dnsPolicy: ClusterFirst
+      serviceAccountName: mahesh-job
       restartPolicy: OnFailure
       schedulerName: default-scheduler
       securityContext: {}
